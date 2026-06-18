@@ -1,8 +1,11 @@
 from django.shortcuts import render
 
-from .models import Mensagem
+from .models import Message
 
 
 def index(request):
-    mensagens = Mensagem.objects.all()
-    return render(request, "home/index.html", {"mensagens": mensagens})
+    messages = Message.objects.all()
+    return render(request, "home/index.html", {"mensagens": messages})
+
+def sobre(request):
+    return render(request, "home/sobre.html")
