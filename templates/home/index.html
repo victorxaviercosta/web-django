@@ -62,9 +62,9 @@
                 <ul class="space-y-3">
                     {% for m in mensagens %}
                         <li class="border-l-2 border-emerald-400 pl-4 py-1">
-                            <h3 class="font-semibold">{{ m.titulo }}</h3>
-                            <p class="text-sm text-slate-300">{{ m.conteudo }}</p>
-                            <span class="text-xs text-slate-500">{{ m.criada_em|date:"d/m/Y H:i" }}</span>
+                            <h3 class="font-semibold">{{ m.title }}</h3>
+                            <p class="text-sm text-slate-300">{{ m.content }}</p>
+                            <span class="text-xs text-slate-500">{{ m.creation_timestamp|date:"d/m/Y H:i" }}</span>
                         </li>
                     {% endfor %}
                 </ul>

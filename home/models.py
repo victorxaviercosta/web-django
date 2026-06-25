@@ -10,4 +10,4 @@ class Mensagem(models.Model):
         ordering = ["-creation_timestamp"]
 
     def __str__(self):
-        return self.titulo
+        return self.title
