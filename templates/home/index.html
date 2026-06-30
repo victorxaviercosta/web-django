@@ -64,6 +64,11 @@
                     {% for m in mensagens %}
                         <li class="border-l-2 border-emerald-400 pl-4 py-1">
                             <h3 class="font-semibold">{{ m.title }}</h3>
+                            {% if m.category %}
+                                <span class="inline-block px-2 py-0.5 mt-1 bg-indigo-500/20 text-indigo-300 text-xs rounded-full">
+                                    {{ m.category.name }}
+                                </span>
+                            {% endif %}
                             <p class="text-sm text-slate-300">{{ m.content }}</p>
                             <span class="text-xs text-slate-400">por {{ m.author }}</span>
                             <span class="text-xs text-slate-500">{{ m.creation_timestamp|date:"d/m/Y H:i" }}</span>
