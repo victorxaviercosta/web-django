@@ -11,6 +11,16 @@ class Category(models.Model):
         return self.name
 
 
+class Tag(models.Model):
+    name = models.SlugField(max_length=30, unique=True)
+
+    class Meta:
+        ordering = ["name"]
+
+    def __str__(self):
+        return self.name
+
+
 class Message(models.Model):
     title = models.CharField(max_length=120)
     content = models.TextField()
@@ -20,6 +30,11 @@ class Message(models.Model):
         Category,
         on_delete=models.SET_NULL,
         null=True,
+        blank=True,
+        related_name="messages"
+    )
+    tags = models.ManyToManyField(
+        Tag,
         blank=True,
         related_name="messages"
     )
