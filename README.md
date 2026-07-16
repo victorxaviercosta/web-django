@@ -1,13 +1,23 @@
 # Demo Django 
 
-## Roteiro V — Formulário HTML e o ciclo CRUD com Django
+## Roteiro VI — Editar e remover: finalizando o ciclo CRUD com Django
 
-Execução do quinto roteiro prático da disciplina de Programação Web
+Execução do sexto roteiro prático da disciplina de Programação Web
 
 ### Sistema em execução:
 
-![Sistema em Execução (nova)](figures/roteiro_5_nova.png)
+#### Create:
+![Sistema em Execução (create)](figures/roteiro_6_create.png)
 
-![Sistema em Execução (index)](figures/roteiro_5_index.png)
+#### Read:
+![Sistema em Execução (read)](figures/roteiro_6_read.png)
 
-![Sistema em Execução (admin)](figures/roteiro_5_admin.png)
+#### Update:
+![Sistema em Execução (update)](figures/roteiro_6_update.png)
+
+![Sistema em Execução (update_feedback)](figures/roteiro_6_update_feedback.png)
+
+#### Delete:
+![Sistema em Execução (delete)](figures/roteiro_6_delete.png)
+
+![Sistema em Execução (delete_feedback)](figures/roteiro_6_delete_feedback.png)
